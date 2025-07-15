@@ -1,4 +1,6 @@
 name: 'netlify-plugin-notifications'
 inputs:
+  - name: event
+    description: Event to send notifications for.
   - name: url
     description: URL to send notifications to.
