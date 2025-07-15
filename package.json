@@ -31,7 +31,8 @@
 		".": "./src/index.js"
 	},
 	"files": [
-		"./src/"
+		"./src/",
+		"./manifest.yml"
 	],
 	"devDependencies": {
 		"@commitlint/cli": "^19.3.0",
