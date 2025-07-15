@@ -8,10 +8,15 @@ const events = {
 	pre_dev: 'onPreDev',
 	success: 'onSuccess',
 };
+
 const handler = async ({ inputs }) => {
-	await fetch(inputs.url, {
-		method: 'POST',
-	});
+	const url = process.env[inputs.variable];
+
+	if (url) {
+		await fetch(url, {
+			method: 'POST',
+		});
+	}
 };
 
 export default function plugin(inputs) {
