@@ -1,3 +1,5 @@
+import { env } from 'node:process';
+
 const events = {
 	build: 'onBuild',
 	dev: 'onDev',
@@ -9,15 +11,15 @@ const events = {
 	success: 'onSuccess',
 };
 
-const handler = async ({ inputs }) => {
-	const url = process.env[inputs.variable];
+async function handler({ inputs }) {
+	const url = env[inputs.variable];
 
 	if (url) {
 		await fetch(url, {
 			method: 'POST',
 		});
 	}
-};
+}
 
 export default function plugin(inputs) {
 	const event = events[inputs.event];
