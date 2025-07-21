@@ -1,10 +1,10 @@
-name: 'netlify-plugin-notifications'
+name: netlify-plugin-notifications
 inputs:
-  - name: 'event'
-    description: 'Event to send notifications for.'
+  - name: event
+    description: Event to send notifications for.
     required: false
-    default: 'success'
-  - name: 'variable'
-    description: 'Environment variable holding the URL to send notifications to.'
+    default: success
+  - name: variable
+    description: Environment variable holding the URL to send notifications to.
     required: false
-    default: 'NETLIFY_PLUGIN_NOTIFICATIONS_URL'
+    default: NETLIFY_PLUGIN_NOTIFICATIONS_URL
