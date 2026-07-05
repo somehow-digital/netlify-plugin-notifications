@@ -2,7 +2,7 @@
 	"name": "@somehow-digital/netlify-plugin-notifications",
 	"type": "module",
 	"version": "0.0.0",
-	"packageManager": "pnpm@11.9.0",
+	"packageManager": "pnpm@11.10.0",
 	"description": "Netlify plugin to send notifications.",
 	"license": "MIT",
 	"repository": "somehow-digital/netlify-plugin-notifications",
